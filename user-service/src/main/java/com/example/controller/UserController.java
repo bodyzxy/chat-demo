@@ -3,11 +3,11 @@ package com.example.controller;
 import com.example.common.BaseResponse;
 import com.example.pojo.Users;
 import com.example.pojo.dto.UserDTO;
-import com.example.pojo.dto.UsernameDTO;
 import com.example.repository.UserRepository;
 import com.example.utils.ResultUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -19,6 +19,9 @@ import java.util.Date;
 public class UserController {
 
     private final UserRepository userRepository;
+
+    @Value("${pattern.dateformat}")
+    private String data;
 
     @PostMapping("/create")
     public String create(@RequestBody UserDTO userDTO) {
@@ -38,8 +41,11 @@ public class UserController {
     }
 
     @GetMapping("/select/{id}")
-    public BaseResponse select(@PathVariable("id") Long id) {
+    public Users select(@PathVariable("id") Long id) {
         Users user = userRepository.getReferenceById(id);
-        return ResultUtils.success(user);
+
+        data = String.valueOf(new Date());
+        System.out.println(data);
+        return user;
     }
 }

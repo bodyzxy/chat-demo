@@ -1,6 +1,7 @@
 package com.example.controller;
 
 
+import com.example.clients.UserClients;
 import com.example.common.BaseResponse;
 import com.example.entity.AdminUser;
 import com.example.entity.dto.AdminUserDTO;
@@ -20,6 +21,8 @@ public class AdminUserController {
     private AdminUserRepository adminUserRepository;
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private UserClients userClients;
 
     @PostMapping("/create")
     public BaseResponse create(@RequestBody AdminUserDTO adminUserDTO){
@@ -35,7 +38,8 @@ public class AdminUserController {
     @GetMapping("/select")
     public BaseResponse select(@RequestParam("username") String username){
         AdminUser adminUser = adminUserRepository.findByUsername(username);
-        Users users = userRepository.getReferenceById(adminUser.getUserId());
+
+        Users users = userClients.select(adminUser.getUserId());
         adminUser.setUsers(users);
         return ResultUtils.success(adminUser);
 

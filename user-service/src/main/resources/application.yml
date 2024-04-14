@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    import: "nacos:userservice-dev.yaml"
+  application:
+    name: user-service
+  datasource:
+    username: postgres
+    password: zxyxxxx
+    url: jdbc:postgresql://localhost:5432/test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: "127.0.0.1:8848"
+        group: dev
+#        cluster-name: ZH #集群名
+      config: #拉取nacos配置需要
+        file-extension: yaml
+        server-addr: "127.0.0.1:8848"
+
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+#      ddl-auto: create
+    show-sql: true
+    open-in-view: true
