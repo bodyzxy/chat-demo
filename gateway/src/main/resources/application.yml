@@ -1,0 +1,27 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: gateway
+  datasource:
+    username: postgres
+    password: zxyxxxxxxxx
+    url: jdbc:postgresql://localhost:5432/test
+  main:
+    web-application-type: reactive
+  cloud:
+    nacos:
+      discovery:
+        server-addr: "127.0.0.1:8848"
+        group: dev
+    gateway:
+      routes: #网关路由配置
+        - id: user-service
+          uri: lb://user-service
+          predicates: #路由断言
+            - Path=/user/** #按照这个路径进行配置
+        - id: admin-service
+          uri: lb://adminservice
+          predicates: #路由断言
+            - Path=/admin/** #按照这个路径进行配置

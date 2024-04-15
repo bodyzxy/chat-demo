@@ -2,19 +2,33 @@ server:
   port: 8080
 
 spring:
-  config:
-    import: "nacos:adminservice-dev.yaml"
   application:
     name: adminservice
+  main:
+    allow-bean-definition-overriding: true
   cloud:
     nacos:
       discovery:
         server-addr: "127.0.0.1:8848"
         group: dev
-#        cluster-name: ZH #集群名
-      config: #拉取nacos配置需要
-        file-extension: yaml
-        server-addr: "127.0.0.1:8848"
+      #        cluster-name: ZH #集群名
+      config:
+        import-check:
+          enabled: false
+    openfeign:
+      httpclient:
+        enabled: true #开启feignhttpclient支持
+        max-connections: 200
+        max-connections-per-route: 50
+
+  ai:
+    # api和key分享自：https://pgthinker.me/2023/10/03/196/
+    openai:
+      api-key: sk-KgvugzpKzki15GFxB72e7782De844b23B3E4Fc6dDf40B29a
+      base-url: https://api.mnzdna.xyz
+      chat:
+        options:
+          temperature: 0.7
 
   datasource:
     username: postgres
@@ -22,8 +36,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/test
   jpa:
     hibernate:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-#      ddl-auto: create
+      ddl-auto: create
     show-sql: true
     open-in-view: true
-

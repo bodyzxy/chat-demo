@@ -8,7 +8,7 @@ spring:
     name: user-service
   datasource:
     username: postgres
-    password: zxyxxxx
+    password: zxyxxxxxxx
     url: jdbc:postgresql://localhost:5432/test
   cloud:
     nacos:
@@ -23,7 +23,6 @@ spring:
 
   jpa:
     hibernate:
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-#      ddl-auto: create
+      ddl-auto: create
     show-sql: true
     open-in-view: true

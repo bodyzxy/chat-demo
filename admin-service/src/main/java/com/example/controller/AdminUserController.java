@@ -7,7 +7,6 @@ import com.example.entity.AdminUser;
 import com.example.entity.dto.AdminUserDTO;
 import com.example.pojo.Users;
 import com.example.repository.AdminUserRepository;
-import com.example.repository.UserRepository;
 import com.example.utils.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +18,6 @@ import org.springframework.web.bind.annotation.*;
 public class AdminUserController {
     @Autowired
     private AdminUserRepository adminUserRepository;
-    @Autowired
-    private UserRepository userRepository;
     @Autowired
     private UserClients userClients;
 
