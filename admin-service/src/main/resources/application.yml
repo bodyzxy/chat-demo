@@ -24,11 +24,14 @@ spring:
   ai:
     # api和key分享自：https://pgthinker.me/2023/10/03/196/
     openai:
-      api-key: sk-KgvugzpKzki15GFxB72e7782De844b23B3E4Fc6dDf40B29a
+      api-key: sk-W9kYeE3JfWM86sr66exxxxxxxx
       base-url: https://api.mnzdna.xyz
       chat:
         options:
           temperature: 0.7
+  autoconfigure:
+    exclude:
+      - org.springframework.ai.autoconfigure.vectorstore.pgvector.PgVectorStoreAutoConfiguration
 
   datasource:
     username: postgres
@@ -36,7 +39,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/test
   jpa:
     hibernate:
-      ddl-auto: create
+#      ddl-auto: create
     show-sql: true
     open-in-view: true
 

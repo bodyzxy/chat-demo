@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="配置">
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/config/WebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/interceptor/JwtTokenAdminInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-common/src/main/java/com/example/context/BaseContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-common/src/main/java/com/example/properties/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-common/src/main/java/com/example/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity-service/src/main/java/com/example/dto/EmployeeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entity-service/src/main/java/com/example/vo/EmployeeVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="JWT校验">
+      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/controller/PdfController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/service/PdfService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/service/impl/PdfServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/AdminServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/AdminServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/controller/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/controller/AdminUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +107,11 @@
       <recent name="$PROJECT_DIR$/feign-api/src/main/java/com/example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.config" />
       <recent name="com.example.utils" />
       <recent name="com.example.dto" />
       <recent name="com.example.pojo" />
       <recent name="com.example" />
-      <recent name="com.example.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,7 +203,7 @@
       <workItem from="1713197789557" duration="33000" />
       <workItem from="1713197827665" duration="81000" />
       <workItem from="1713197941889" duration="752000" />
-      <workItem from="1713248979403" duration="6086000" />
+      <workItem from="1713248979403" duration="8262000" />
     </task>
     <task id="LOCAL-00001" summary="feign和nacos的配置">
       <option name="closed" value="true" />
@@ -239,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713249634253</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JWT校验">
+      <option name="closed" value="true" />
+      <created>1713269840294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713269840294</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +247,7 @@
     <MESSAGE value="feign和nacos的配置" />
     <MESSAGE value="规范配置，设置网关" />
     <MESSAGE value="配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置" />
+    <MESSAGE value="JWT校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT校验" />
   </component>
 </project>
