@@ -1,6 +1,5 @@
-package com.example.entity;
+package com.example.pojo;
 
-import com.example.pojo.Users;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

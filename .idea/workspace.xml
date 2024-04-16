@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="feign和nacos的配置">
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="规范配置，设置网关">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/controller/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/controller/AdminUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/entity/AdminUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity-service/src/main/java/com/example/pojo/AdminUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/entity/dto/AdminUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity-service/src/main/java/com/example/dto/AdminUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/repository/AdminUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/repository/AdminUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/entity-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feign-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +20,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -62,44 +56,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.chat-demo [clean].executor": "Run",
-    "Maven.chat-demo [install].executor": "Run",
-    "Maven.user-service [clean].executor": "Run",
-    "Maven.user-service [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AdminServiceApplication.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.UserServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/zxy/AllProject/java/chat-demo/gateway/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/zxy/AllProject/java/chat-demo/gateway/src/main/java/com/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.chat-demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.chat-demo [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.user-service [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AdminServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zxy/AllProject/java/chat-demo/gateway/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/zxy/AllProject/java/chat-demo/gateway/src/main/java/com/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -112,8 +106,9 @@
       <recent name="$PROJECT_DIR$/user-service/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example" />
+      <recent name="com.example.dto" />
       <recent name="com.example.pojo" />
+      <recent name="com.example" />
       <recent name="com.example.entity" />
     </key>
   </component>
@@ -126,7 +121,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.AdminServiceApplication">
     <configuration name="AdminServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="admin-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AdminServiceApplication" />
@@ -169,8 +164,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserServiceApplication" />
         <item itemvalue="Spring Boot.AdminServiceApplication" />
+        <item itemvalue="Spring Boot.UserServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +193,8 @@
       <workItem from="1713197321869" duration="461000" />
       <workItem from="1713197789557" duration="33000" />
       <workItem from="1713197827665" duration="81000" />
-      <workItem from="1713197941889" duration="352000" />
+      <workItem from="1713197941889" duration="752000" />
+      <workItem from="1713248979403" duration="553000" />
     </task>
     <task id="LOCAL-00001" summary="feign和nacos的配置">
       <option name="closed" value="true" />
@@ -208,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713101933557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="规范配置，设置网关">
+      <option name="closed" value="true" />
+      <created>1713198567277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713198567277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +220,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feign和nacos的配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="feign和nacos的配置" />
+    <MESSAGE value="规范配置，设置网关" />
+    <option name="LAST_COMMIT_MESSAGE" value="规范配置，设置网关" />
   </component>
 </project>

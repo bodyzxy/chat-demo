@@ -3,8 +3,8 @@ package com.example.controller;
 
 import com.example.clients.UserClients;
 import com.example.common.BaseResponse;
-import com.example.entity.AdminUser;
-import com.example.entity.dto.AdminUserDTO;
+import com.example.dto.AdminUserDTO;
+import com.example.pojo.AdminUser;
 import com.example.pojo.Users;
 import com.example.repository.AdminUserRepository;
 import com.example.utils.ResultUtils;
