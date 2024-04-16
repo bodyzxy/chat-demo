@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="JWT校验">
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/controller/PdfController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/service/PdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/service/impl/PdfServiceImpl.java" afterDir="false" />
+    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="pdf上传">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/ChatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/ChatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/541c16c7-dc0f-4854-aa89-b461783de7f9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/541c16c7-dc0f-4854-aa89-b461783de7f9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/com/example/config/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/com/example/config/WebMvcConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="AdminServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="admin-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AdminServiceApplication" />
@@ -173,8 +176,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AdminServiceApplication" />
         <item itemvalue="Spring Boot.UserServiceApplication" />
+        <item itemvalue="Spring Boot.AdminServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +206,7 @@
       <workItem from="1713197789557" duration="33000" />
       <workItem from="1713197827665" duration="81000" />
       <workItem from="1713197941889" duration="752000" />
-      <workItem from="1713248979403" duration="8262000" />
+      <workItem from="1713248979403" duration="13421000" />
     </task>
     <task id="LOCAL-00001" summary="feign和nacos的配置">
       <option name="closed" value="true" />
@@ -237,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713269840294</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pdf上传">
+      <option name="closed" value="true" />
+      <created>1713272258589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713272258589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +259,7 @@
     <MESSAGE value="规范配置，设置网关" />
     <MESSAGE value="配置" />
     <MESSAGE value="JWT校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="JWT校验" />
+    <MESSAGE value="pdf上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="pdf上传" />
   </component>
 </project>

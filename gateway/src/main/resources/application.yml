@@ -4,10 +4,6 @@ server:
 spring:
   application:
     name: gateway
-  datasource:
-    username: postgres
-    password: zxyxxxxxxxx
-    url: jdbc:postgresql://localhost:5432/test
   main:
     web-application-type: reactive
   cloud:
