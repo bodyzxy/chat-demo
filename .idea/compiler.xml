@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="entity-service" />
         <module name="user-service" />
+        <module name="chat-common" />
         <module name="admin-service" />
         <module name="feign-api" />
         <module name="gateway" />
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-service" options="-parameters" />
+      <module name="chat-common" options="-parameters" />
       <module name="chat-demo" options="" />
       <module name="entity-service" options="-parameters" />
       <module name="feign-api" options="-parameters" />
