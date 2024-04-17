@@ -8,6 +8,7 @@ import com.example.utils.ResultUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @Slf4j
@@ -36,5 +37,15 @@ public class ChatController {
     @PostMapping("/image")
     public BaseResponse aiImage(@RequestBody AiImage aiImage){
         return chatService.aiImage(aiImage);
+    }
+
+    /**
+     * 音频转文本
+     * @param file
+     * @return
+     */
+    @PostMapping("/void")
+    public BaseResponse chatVoid(@RequestParam("file") MultipartFile file){
+        return chatService.chatVoid(file);
     }
 }

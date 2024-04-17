@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="添加text文本">
-      <change afterPath="$PROJECT_DIR$/entity-service/src/main/java/com/example/pojo/AiImage.java" afterDir="false" />
+    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="画图">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/common/CustomResponseErrorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" afterDir="false" />
@@ -204,7 +204,7 @@
       <workItem from="1713197827665" duration="81000" />
       <workItem from="1713197941889" duration="752000" />
       <workItem from="1713248979403" duration="13570000" />
-      <workItem from="1713344879102" duration="4695000" />
+      <workItem from="1713344879102" duration="9227000" />
     </task>
     <task id="LOCAL-00001" summary="feign和nacos的配置">
       <option name="closed" value="true" />
@@ -262,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713345723903</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="画图">
+      <option name="closed" value="true" />
+      <created>1713356867451</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713356867451</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +284,7 @@
     <MESSAGE value="pdf上传" />
     <MESSAGE value="根据pdf进行询问" />
     <MESSAGE value="添加text文本" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加text文本" />
+    <MESSAGE value="画图" />
+    <option name="LAST_COMMIT_MESSAGE" value="画图" />
   </component>
 </project>
