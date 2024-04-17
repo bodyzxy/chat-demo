@@ -1,6 +1,9 @@
 package com.example.service.impl;
 
+import com.example.common.BaseResponse;
+import com.example.pojo.AiImage;
 import com.example.service.ChatService;
+import com.example.utils.ResultUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.Message;
@@ -9,15 +12,22 @@ import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.embedding.EmbeddingClient;
+import org.springframework.ai.image.ImageClient;
+import org.springframework.ai.image.ImagePrompt;
+import org.springframework.ai.image.ImageResponse;
 import org.springframework.ai.openai.OpenAiAudioTranscriptionClient;
 import org.springframework.ai.openai.OpenAiEmbeddingClient;
+import org.springframework.ai.openai.OpenAiImageClient;
+import org.springframework.ai.openai.OpenAiImageOptions;
 import org.springframework.ai.openai.api.OpenAiApi;
+import org.springframework.ai.openai.api.OpenAiImageApi;
 import org.springframework.ai.vectorstore.PgVectorStore;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.ai.chat.ChatClient;
+import org.springframework.web.client.RestClient;
 
 import java.util.List;
 import java.util.Map;
@@ -69,5 +79,27 @@ public class ChatServiceImpl implements ChatService {
         OpenAiApi openAiApi = new OpenAiApi(baseUrl, defaultApiKey);
         EmbeddingClient openAiEmbeddingClient = new OpenAiEmbeddingClient(openAiApi);
         return new PgVectorStore(jdbcTemplate,openAiEmbeddingClient);
+    }
+
+    @Override
+    public BaseResponse aiImage(AiImage aiImage) {
+        ImageClient imageClient = createImageClient();
+        OpenAiImageOptions options = OpenAiImageOptions.builder()
+                .withModel(aiImage.getModel())
+                .withHeight(aiImage.getHeight())
+                .withWidth(aiImage.getWidth())
+                .withResponseFormat(aiImage.getFormat())
+                .build();
+        ImageResponse imageResponse = imageClient.call(new ImagePrompt(aiImage.getPrompt(),options));
+        return ResultUtils.success(imageResponse.getResult());
+    }
+
+    private ImageClient createImageClient() {
+        OpenAiImageApi openAiImageApi = new OpenAiImageApi(
+                baseUrl,
+                defaultApiKey,
+                RestClient.builder()
+        );
+        return new OpenAiImageClient(openAiImageApi);
     }
 }
