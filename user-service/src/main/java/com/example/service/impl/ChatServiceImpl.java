@@ -136,6 +136,10 @@ public class ChatServiceImpl implements ChatService {
         return ResultUtils.error(400,"转换失败");
     }
 
+    /**
+     * 通常用于自定义 RestTemplate 的配置，如超时设置、消息转换器、拦截器等
+     * @return
+     */
     private RestClient.Builder builderCreate() {
         ClientHttpRequestFactory clientHttpRequestFactory = new SimpleClientHttpRequestFactory(){{
             setConnectTimeout(5000); // 设置连接超时时间为5000毫秒
@@ -157,5 +161,4 @@ public class ChatServiceImpl implements ChatService {
         Files.write(path,bytes);
         return new FileSystemResource(path.toFile());
     }
-
 }

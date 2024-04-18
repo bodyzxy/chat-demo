@@ -22,7 +22,7 @@ spring:
   ai:
     # api和key分享自：https://pgthinker.me/2023/10/03/196/
     openai:
-      api-key: sk-W9kYeE3JfWM86sr66exxxxxxxxxx
+      api-key: sk-W9kYeE3JfWM86sr66e29FfC7xxxxxxxxxxxx
       base-url: https://api.mnzdna.xyz
       chat:
         options:
@@ -30,11 +30,27 @@ spring:
 #  autoconfigure:
 #    exclude:
 #      - org.springframework.ai.autoconfigure.vectorstore.pgvector.PgVectorStoreAutoConfiguration
-
-
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
 
   jpa:
     hibernate:
       ddl-auto: create
     show-sql: true
     open-in-view: true
+sky:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    admin-secret-key: chat
+    # 设置jwt过期时间
+    admin-ttl: 7200000
+    # 设置前端传递过来的令牌名称
+    admin-token-name: token
+    #设置JWT签名时使用的密钥
+    user-secret-key: chat
+    #设置JWT过期时间
+    user-ttl: 7200000
+    #设置前端传递过来的令牌名称
+    user-token-name: authentication

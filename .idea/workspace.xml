@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="画图">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/common/CustomResponseErrorHandler.java" afterDir="false" />
+    <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="转录实现">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/config/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/interceptor/JwtTokenAdminInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/common/CustomResponseErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/common/CustomResponseErrorHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/ChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/ChatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/impl/ChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/service/impl/ChatServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -75,7 +80,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/zxy/AllProject/java/chat-demo/chat-common/src/main/java/com/example",
+    "last_opened_file_path": "/Users/zxy/AllProject/java/chat-demo/user-service/src/main/java/com/example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,11 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-service/src/main/java/com/example" />
       <recent name="$PROJECT_DIR$/chat-common/src/main/java/com/example" />
       <recent name="$PROJECT_DIR$/gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/feign-api/src/main/java/com/example/config" />
-      <recent name="$PROJECT_DIR$/feign-api/src/main/java/com/example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.config" />
@@ -204,7 +209,8 @@
       <workItem from="1713197827665" duration="81000" />
       <workItem from="1713197941889" duration="752000" />
       <workItem from="1713248979403" duration="13570000" />
-      <workItem from="1713344879102" duration="9227000" />
+      <workItem from="1713344879102" duration="9957000" />
+      <workItem from="1713440508771" duration="3701000" />
     </task>
     <task id="LOCAL-00001" summary="feign和nacos的配置">
       <option name="closed" value="true" />
@@ -270,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713356867451</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="转录实现">
+      <option name="closed" value="true" />
+      <created>1713366013518</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713366013518</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +299,7 @@
     <MESSAGE value="根据pdf进行询问" />
     <MESSAGE value="添加text文本" />
     <MESSAGE value="画图" />
-    <option name="LAST_COMMIT_MESSAGE" value="画图" />
+    <MESSAGE value="转录实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="转录实现" />
   </component>
 </project>

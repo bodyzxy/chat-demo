@@ -48,4 +48,14 @@ public class ChatController {
     public BaseResponse chatVoid(@RequestParam("file") MultipartFile file){
         return chatService.chatVoid(file);
     }
+
+    /**
+     * 文本转音频(0.8.1暂不支持)
+     * @param file
+     * @return
+     */
+//    @PostMapping("/text")
+//    public BaseResponse chatText(@RequestParam("file") MultipartFile file){
+//        return chatService.chatText(file);
+//    }
 }
