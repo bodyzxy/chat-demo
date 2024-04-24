@@ -6,10 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableScheduling
 @EnableTransactionManagement //开启注解方式的事务管理
 @EnableFeignClients(clients = UserClients.class,defaultConfiguration = FeignClientConfiguration.class)
 public class AdminServiceApplication {
