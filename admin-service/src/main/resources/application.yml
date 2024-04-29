@@ -24,7 +24,7 @@ spring:
   ai:
     # api和key分享自：https://pgthinker.me/2023/10/03/196/
     openai:
-      api-key: sk-W9kYeE3JfWM86sr66e29FfC7B3194406B96fAd460353Dc7a
+      api-key: sk-W9kYeE3Jfxxxxxxxxxxxxx
       base-url: https://api.mnzdna.xyz
       chat:
         options:
@@ -35,7 +35,7 @@ spring:
 
   datasource:
     username: postgres
-    password: bodyzxy
+    password: xxxxxxx
     url: jdbc:postgresql://localhost:5432/test
   jpa:
     hibernate:

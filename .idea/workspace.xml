@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8207aa1d-ec3f-4236-a88b-d6e20652bc73" name="Changes" comment="Jwt验证，可正确注册">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/config/WebMvcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/interceptor/JwtTokenAdminInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/properties/JwtProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/541c16c7-dc0f-4854-aa89-b461783de7f9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/541c16c7-dc0f-4854-aa89-b461783de7f9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/img9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/example/controller/ChatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +114,9 @@
       <recent name="$PROJECT_DIR$/chat-common/src/main/java/com/example" />
       <recent name="$PROJECT_DIR$/gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/image" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.example.interceptor" />
@@ -214,7 +223,7 @@
       <workItem from="1713440508771" duration="4399000" />
       <workItem from="1713941354102" duration="8381000" />
       <workItem from="1714027827483" duration="1263000" />
-      <workItem from="1714372049613" duration="1062000" />
+      <workItem from="1714372049613" duration="4193000" />
     </task>
     <task id="LOCAL-00001" summary="feign和nacos的配置">
       <option name="closed" value="true" />
@@ -304,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713949742909</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Jwt验证，可正确注册">
+      <option name="closed" value="true" />
+      <created>1714373961317</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714373961317</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
