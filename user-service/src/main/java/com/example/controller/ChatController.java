@@ -19,7 +19,7 @@ public class ChatController {
     private final ChatService chatService;
 
     /**
-     * 通过pdf聊天
+     * 通过pdf聊天或者文件
      * @param message
      * @return
      */

@@ -24,7 +24,7 @@ spring:
   ai:
     # api和key分享自：https://pgthinker.me/2023/10/03/196/
     openai:
-      api-key: sk-W9kYeE3JfWM8xxxxxxxx
+      api-key: sk-W9kYeE3JfWM86sr66e29FfC7B3194406B96fAd460353Dc7a
       base-url: https://api.mnzdna.xyz
       chat:
         options:
@@ -35,7 +35,7 @@ spring:
 
   datasource:
     username: postgres
-    password: zxyxxxxxxxx
+    password: bodyzxy
     url: jdbc:postgresql://localhost:5432/test
   jpa:
     hibernate:
@@ -51,9 +51,9 @@ sky:
     admin-ttl: 7200000
     # 设置前端传递过来的令牌名称
     admin-token-name: token
-    #设置JWT签名时使用的密钥
-    user-secret-key: chat
-    #设置JWT过期时间
-    user-ttl: 7200000
-    #设置前端传递过来的令牌名称
-    user-token-name: authentication
+#    #设置JWT签名时使用的密钥
+#    user-secret-key: chat
+#    #设置JWT过期时间
+#    user-ttl: 7200000
+#    #设置前端传递过来的令牌名称
+#    user-token-name: authentication
