@@ -46,6 +46,8 @@ Feign
 
 
 然后进行相关配置
+
+
 ![img.png](image/img3.png)
 
 
@@ -163,6 +165,8 @@ public void addInterceptors(InterceptorRegistry registry) {
 
 ## 管理端
 主要功能注册查询和上床pdf文件
+
+
 ![img.png](image/img.png)
 
 
